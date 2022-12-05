@@ -1,38 +1,74 @@
-.App {
+:root {
+  --background-color: #F7F6F6;
+  --dashboard-elements: #DDDDDD;
+  --visitors-inner-element: #BEBDBD;
+  margin: 0;
+  padding:0;
+}
+
+html {
+  background: var(--background-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+  background: var(--dashboard-elements);
+  display: grid;
+  height:85vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+  grid-template-areas: 
+  "Sidebar Reviews Rating Analysis"
+  "Sidebar Visitors Visitors Visitors";
+}
+
+.Sidebar {
+  background:var(--visitors-inner-element);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  grid-area: Sidebar;
+  display: grid;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  background: var(--background-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Reviews {
+  background:var(--visitors-inner-element);
+  grid-area: Reviews;
+  padding:5px;
 }
+
+.Rating {
+  background:var(--visitors-inner-element);
+  grid-area: Rating;
+  padding:5px;
+}
+
+.Analysis {
+  background:var(--visitors-inner-element);
+  grid-area: Analysis;
+  padding:5px;
+}
+
+.Visitors {
+  background:var(--visitors-inner-element);
+  grid-area: Visitors;
+  padding:5px;
+}
+
+.box {
+  background-color:darkgray;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  height:25vh;
+
+}
+
+
+
