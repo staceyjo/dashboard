@@ -27,9 +27,9 @@ function App() {
       <Header />
       <div className="container">
         <Sidebar />
-          <Reviews />
-          <Rating />
-          <Analysis />
+        <Reviews />
+        <Rating />
+        <Analysis />
         <Visitors />
       </div>
     </div>

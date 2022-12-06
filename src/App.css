@@ -28,9 +28,8 @@ html {
 .Sidebar {
   background:var(--visitors-inner-element);
   text-align: center;
-  align-items: center;
+  padding-top: 55%;
   grid-area: Sidebar;
-  display: grid;
 }
 
 .Header {
@@ -65,9 +64,8 @@ html {
   background-color:darkgray;
   margin-left:10%;
   margin-right: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   height:25vh;
-
 }
 
 
