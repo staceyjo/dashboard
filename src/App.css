@@ -7,7 +7,7 @@
 }
 
 html {
-  background: var(--background-color);
+  background: black;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -15,11 +15,11 @@ html {
 .container {
   background: var(--dashboard-elements);
   display: grid;
-  height:85vh;
+  height:82vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 15px;
-  padding: 15px;
+  padding: 25px;
   grid-template-areas: 
   "Sidebar Reviews Rating Analysis"
   "Sidebar Visitors Visitors Visitors";
@@ -30,42 +30,89 @@ html {
   text-align: center;
   padding-top: 55%;
   grid-area: Sidebar;
+  border-radius: 5%;
+  border-color:#ff6f00;
+  border-style: outset;
+  border-width: 5px;
 }
 
 .Header {
   background: var(--background-color);
+  text-align: center;
 }
 
 .Reviews {
   background:var(--visitors-inner-element);
   grid-area: Reviews;
   padding:5px;
+  border-radius: 5%;
+  border-color: #1572B0;
+  border-style: outset;
+  border-width: 5px;
 }
 
 .Rating {
   background:var(--visitors-inner-element);
   grid-area: Rating;
   padding:5px;
+  border-radius: 5%;
+  border-color: #72B015;
+  border-style: outset;
+  border-width: 5px;
 }
 
 .Analysis {
   background:var(--visitors-inner-element);
   grid-area: Analysis;
   padding:5px;
+  border-radius: 5%;
+  border-color:#B01572;
+  border-style: outset;
+  border-width: 5px;
 }
 
 .Visitors {
   background:var(--visitors-inner-element);
   grid-area: Visitors;
   padding:5px;
+  border-radius: 5%;
+  border-color:rgb(111, 0, 255);
+  border-style: outset;
+  border-width: 5px;
 }
 
 .box {
   background-color:darkgray;
   margin-left:10%;
-  margin-right: 10%;
+  margin-right: 5%;
   margin-bottom: 5%;
   height:25vh;
+}
+
+a:link {
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 15%;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 
